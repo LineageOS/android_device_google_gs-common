@@ -11,6 +11,12 @@ modules_dir=
 system_modules_dir=
 vendor_modules_dir=
 
+# This directory ONLY contains the 16k modules loaded in 16k mode
+# during the Second Boot Stage. This directory is not present in the
+# <device>_16k targets.
+mode_16k_modules_dir=/vendor/lib/modules/16k-mode
+pagesize=$(getconf PAGE_SIZE)
+
 for dir in system vendor; do
   for f in /${dir}/lib/modules/*/modules.dep /${dir}/lib/modules/modules.dep; do
     if [[ -f "$f" ]]; then
@@ -92,7 +98,9 @@ if [ -f $cfg_file ]; then
             modules_dir=${vendor_modules_dir}
             arg="--all=${vendor_modules_dir}/modules.load" ;;
         esac
-        if [[ -d "${modules_dir}" ]]; then
+        if [[ "${pagesize}" == "16384" && -d "${mode_16k_modules_dir}" ]]; then
+          insmod ${mode_16k_modules_dir}/$arg
+        elif [[ -d "${modules_dir}" ]]; then
           modprobe -a -d "${modules_dir}" $arg
         fi
         ;;

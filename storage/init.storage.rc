@@ -50,6 +50,9 @@ on property:sys.boot_completed=1
     chown system system /dev/sys/block/bootdevice/manual_gc
     write /dev/sys/block/bootdevice/manual_gc 0
 
+    # Power HAL access
+    chmod 0664 /dev/sys/block/bootdevice/manual_gc
+
     # Pixelstats
     chown system system /dev/sys/block/bootdevice/slowio_read_cnt
     chown system system /dev/sys/block/bootdevice/slowio_sync_cnt
