@@ -4,22 +4,27 @@ DIR=/data/vendor/dump_touch
 LOCKFILE="$DIR"/dumping
 LOGFILE="$DIR"/dump.log
 
-if [ ! -f $LOCKFILE ]
+if [ ! -f $LOCKFILE ] || [ ! -f $LOGFILE ] || [ "$(cat $LOCKFILE)" = 0 ]
 then
 	echo "-----------------------------------------------------"
-	echo "Error : PreDump Touch Logs couldn't be found."
+	echo "Info : Touch debug data not found! Backfilling..."
 	echo "-----------------------------------------------------"
-	exit 2
+	/vendor/bin/predump_touch.sh > /dev/null 2>&1
 fi
 
 state=$(cat $LOCKFILE)
 if [ "$state" != 2 ]
 then
-  echo "Unexpected state! Expected 2 but found ${state}" >> $LOGFILE
+  echo "Unexpected state! Expected 2 but found ${state}"
 fi
 
-cat $LOGFILE
-echo "" > $LOGFILE
+if [ -f $LOGFILE ]
+then
+	cat $LOGFILE
+	echo "" > $LOGFILE
+fi
 
-echo 0 > $LOCKFILE
-
+if [ -f $LOCKFILE ]
+then
+	echo 0 > $LOCKFILE
+fi
