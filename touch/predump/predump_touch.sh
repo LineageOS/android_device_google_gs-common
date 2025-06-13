@@ -18,10 +18,13 @@ then
   chmod 660 $LOGFILE
 fi
 
-echo $(date) >> $LOGFILE
+date >> $LOGFILE
 
 state=$(cat $LOCKFILE)
-if [ "$state" != 0 ]
+if [ "$state" = 2 ]
+then
+  echo "Warning : Pending predump data detected (state=${state})" >> $LOGFILE
+elif [ "$state" != 0 ]
 then
   echo "Unexpected state! Expected 0 but found ${state}" >> $LOGFILE
 fi
@@ -33,7 +36,7 @@ do
   echo "----------------------------------" >> $LOGFILE
   echo "$entry" >> $LOGFILE
   echo "----------------------------------" >> $LOGFILE
-  sh $entry >> $LOGFILE
+  sh "$entry" >> $LOGFILE 2>&1
   echo "----------------------------------" >> $LOGFILE
 done
 
