@@ -1,5 +1,0 @@
-userdebug_or_eng(`
-  # For access /data/vendor/gyotaku folder
-  allow gyotaku_app gyotaku_vendor_data_file:dir create_dir_perms;
-  allow gyotaku_app gyotaku_vendor_data_file:file create_file_perms;
-')

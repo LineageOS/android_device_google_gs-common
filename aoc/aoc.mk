@@ -12,11 +12,3 @@ ifneq ($(wildcard vendor/google/whitechapel/aoc/aocx/aidl/aocx/framework_compati
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     vendor/google/whitechapel/aoc/aocx/aidl/aocx/framework_compatibility_matrix.xml
 endif
-
-# AoC debug support
-PRODUCT_PACKAGES_ENG += \
-	aocdump \
-	aocutil \
-	aoc_audio_cfg \
-	vp_util \
-	aocx_tool

@@ -31,11 +31,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
        ro.audio.ihaladaptervendorextension_enabled=true
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-$(call soong_config_set,aoc_audio_func,dump_usecase_data,true)
-$(call soong_config_set,aoc_audio_func,hal_socket_control,true)
-$(call soong_config_set,aoc_audio_func,record_tuning_keys,true)
-$(call soong_config_set,aoc_audio_func,aidl_command_interface,true)
-endif
-
 $(call soong_config_set,pixel_audio_hal_type,aidl_build,true)

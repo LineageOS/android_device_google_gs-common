@@ -1,5 +1,0 @@
-# For /data/vendor use
-type gyotaku_vendor_data_file, file_type, data_file_type;
-userdebug_or_eng(`
-    typeattribute gyotaku_vendor_data_file mlstrustedobject;
-')

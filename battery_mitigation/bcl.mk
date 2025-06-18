@@ -1,11 +1,6 @@
 ifeq (,$(filter factory_%,$(TARGET_PRODUCT)))
 PRODUCT_PACKAGES += battery_mitigation
 endif
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-ifeq (,$(filter factory_%,$(TARGET_PRODUCT)))
-PRODUCT_PACKAGES += BrownoutDetection
-endif
-endif
 
 ifeq ($(RELEASE_PIXEL_AIDL_BATTERY_MITIGATION_HAL), true)
 PRODUCT_PROPERTY_OVERRIDES += \

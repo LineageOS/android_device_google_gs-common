@@ -1,4 +1,0 @@
-/data/vendor/gyotaku(/.*)?                u:object_r:gyotaku_vendor_data_file:s0
-
-# Pixel dump for Gyotaku
-/vendor/bin/dump/dump_gyotaku           u:object_r:dump_gyotaku_exec:s0

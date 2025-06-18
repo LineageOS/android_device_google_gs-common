@@ -12,6 +12,3 @@ PRODUCT_PACKAGES += \
 	bcm47765_gps_package \
 	sitril-gps \
 	android.hardware.location.gps.prebuilt.xml
-
-PRODUCT_PACKAGES_ENG += \
-	init.gps_log.rc

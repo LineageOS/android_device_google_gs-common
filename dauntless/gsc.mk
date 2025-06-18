@@ -14,13 +14,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.citadel \
     dump_gsc.sh
 
-# USERDEBUG ONLY: Install test packages
-PRODUCT_PACKAGES_ENG += citadel_integration_tests \
-                          pwntest \
-                          nugget_targeted_tests \
-                          CitadelProvision \
-                          nugget_aidl_test_weaver
-
 # Assign default value for RELEASE_GOOGLE_DAUNTLESS_DIR if no trunk flags support
 RELEASE_GOOGLE_DAUNTLESS_DIR ?= vendor/google_nos/prebuilts/dauntless
 
