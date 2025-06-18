@@ -1,5 +1,3 @@
-PRODUCT_SOONG_NAMESPACES += vendor/samsung_slsi/codec2
-
 PRODUCT_PACKAGES += \
 	samsung.hardware.media.c2@1.2-service \
 	codec2.vendor.base.policy \

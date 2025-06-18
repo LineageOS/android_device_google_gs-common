@@ -27,9 +27,4 @@ PRODUCT_COPY_FILES += \
 
 endif
 
-## TODO(b/271958194): separate for hidl and aidl.
-PRODUCT_SOONG_NAMESPACES += \
-	vendor/google/whitechapel/audio/hal \
-	vendor/google/whitechapel/audio/interfaces
-
 $(call soong_config_set,aoc_audio_board,platform,$(TARGET_BOARD_PLATFORM))
