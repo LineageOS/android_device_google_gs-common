@@ -1,5 +1,3 @@
-PRODUCT_SOONG_NAMESPACES += vendor/google/media/bigwave
-
 PRODUCT_PACKAGES += \
 	google.hardware.media.c2@2.0-service \
 	libgc2_bw_store \
