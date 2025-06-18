@@ -7,8 +7,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
        vendor.battery_mitigation.aidl.enable=true
 endif
 
-PRODUCT_SOONG_NAMESPACES += device/google/gs-common/battery_mitigation \
-                            vendor/google/battery_mitigation
+PRODUCT_SOONG_NAMESPACES += device/google/gs-common/battery_mitigation
 PRODUCT_PACKAGES += vendor.google.battery_mitigation-default
 PRODUCT_PACKAGES += vendor.google.battery_mitigation.service_static
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs-common/battery_mitigation/compatibility_matrix.xml
