@@ -17,6 +17,10 @@ get_prop(hal_gnss_pixel, vendor_gps_prop)
 binder_call(hal_gnss_pixel, hal_contexthub_default)
 allow hal_gnss_pixel hal_contexthub_service:service_manager find;
 
+# Allow binder to fwk stats.
+binder_call(hal_gnss_pixel, fwk_stats_service)
+allow hal_gnss_pixel fwk_stats_service:service_manager find;
+
 # Allow connect to gnss service
 allow hal_gnss_pixel vendor_gps_file:dir create_dir_perms;
 allow hal_gnss_pixel vendor_gps_file:fifo_file create_file_perms;
