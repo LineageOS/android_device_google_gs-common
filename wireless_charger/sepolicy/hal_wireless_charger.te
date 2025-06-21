@@ -7,6 +7,7 @@ allow hal_wireless_charger sysfs_batteryinfo:file rw_file_perms;
 allow hal_wireless_charger self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 allow hal_wireless_charger sysfs_wlc:file rw_file_perms;
 
+set_prop(hal_wireless_charger, vendor_wlcservice_prop)
 
 binder_call(hal_wireless_charger, servicemanager)
 add_service(hal_wireless_charger, hal_wireless_charger_service)
