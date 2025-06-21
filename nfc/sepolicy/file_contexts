@@ -1,0 +1,1 @@
+/data/vendor/nfc(/.*)?                                                      u:object_r:vendor_nfc_vendor_data_file:s0

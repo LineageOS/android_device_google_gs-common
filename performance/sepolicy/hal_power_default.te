@@ -1,3 +1,5 @@
+hal_client_domain(hal_power_default, hal_thermal)
+
 # allow power hal to access pa kill knobs
 allow hal_power_default sysfs_pakills:file rw_file_perms;
 allow hal_power_default sysfs_pakills:dir r_dir_perms;
