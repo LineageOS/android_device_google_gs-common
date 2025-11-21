@@ -6,7 +6,7 @@ allow vendor_pcs_app {
 
 allow vendor_pcs_app hal_pixel_remote_camera_service:service_manager add;
 
-binder_call(vendor_pcs_app, hal_pixel_remote_camera_service);
+#binder_call(vendor_pcs_app, hal_pixel_remote_camera_service);
 binder_call(vendor_pcs_app, hal_camera_default);
 
 # Allow interacting with EdgeTpu.
