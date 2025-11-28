@@ -1,2 +1,0 @@
-#
-type tracefs_instances_interrupts, sysfs_type, fs_type;

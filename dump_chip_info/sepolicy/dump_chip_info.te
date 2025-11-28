@@ -1,3 +1,0 @@
-#
-pixel_bugreport(dump_chip_info)
-allow dump_chip_info sysfs_chip_info:file r_file_perms;

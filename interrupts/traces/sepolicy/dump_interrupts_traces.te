@@ -1,7 +1,0 @@
-#
-pixel_bugreport(dump_interrupts_traces)
-
-allow dump_interrupts_traces radio_vendor_data_file:dir { search add_name create write };
-allow dump_interrupts_traces radio_vendor_data_file:file { getattr create write open };
-allow dump_interrupts_traces debugfs_tracing_instances:dir search;
-allow dump_interrupts_traces tracefs_instances_interrupts:file { getattr read open };

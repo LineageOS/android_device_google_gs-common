@@ -1,3 +1,0 @@
-allow hal_graphics_composer_default dump_pixel_display:fifo_file { append write };
-allow hal_graphics_composer_default dump_pixel_display:fd use;
-

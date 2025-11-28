@@ -1,7 +1,0 @@
-#
-pixel_bugreport(dump_mailbox)
-allow dump_mailbox radio_vendor_data_file:dir create_dir_perms;
-allow dump_mailbox radio_vendor_data_file:file create_file_perms;
-allow dump_mailbox debugfs_tracing_instances:file r_file_perms;
-allow dump_mailbox debugfs_tracing_instances:dir search;
-allow dump_mailbox debugfs_tracing_instances_mailbox:file r_file_perms;

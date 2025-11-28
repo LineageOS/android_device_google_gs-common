@@ -1,6 +1,0 @@
-genfscon sysfs /kernel/pixel_metrics/modem/modem_boot_duration  u:object_r:sysfs_kernel_metrics:s0
-genfscon sysfs /kernel/pixel_metrics/modem/modem_wakeup_ap      u:object_r:sysfs_kernel_metrics:s0
-genfscon sysfs /kernel/pixel_metrics/modem/pcie_link_state      u:object_r:sysfs_kernel_metrics:s0
-genfscon sysfs /kernel/pixel_metrics/modem/pcie_link_duration   u:object_r:sysfs_kernel_metrics:s0
-genfscon sysfs /kernel/pixel_metrics/modem/pcie_link_stats      u:object_r:sysfs_kernel_metrics:s0
-genfscon sysfs /kernel/pixel_metrics/modem/pcie_link_updown     u:object_r:sysfs_kernel_metrics:s0

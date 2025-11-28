@@ -1,5 +1,0 @@
-
-per-file *.te,*_contexts,te_macros,global_macros=set noparent
-per-file *.te,*_contexts,te_macros,global_macros=file:/sepolicy/OWNERS
-per-file *.mk,{**/,}Android.bp=set noparent
-per-file *.mk,{**/,}Android.bp=file:MK_OWNERS
