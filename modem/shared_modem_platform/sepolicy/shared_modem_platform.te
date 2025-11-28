@@ -1,5 +1,0 @@
-# Shared modem platform will register the default instance of the AIDL ISharedModemPlatform hal.
-hal_server_domain(shared_modem_platform, hal_shared_modem_platform)
-
-allow shared_modem_platform sysfs_kernel_metrics:file r_file_perms;
-

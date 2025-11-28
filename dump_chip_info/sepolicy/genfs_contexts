@@ -1,6 +1,0 @@
-genfscon sysfs /devices/system/goog-chip-info/ap_rom_patch_ver u:object_r:sysfs_chip_info:s0
-genfscon sysfs /devices/system/goog-chip-info/gpcm_asic_id     u:object_r:sysfs_chip_info:s0
-genfscon sysfs /devices/system/goog-chip-info/device_table     u:object_r:sysfs_chip_info:s0
-genfscon sysfs /devices/system/goog-chip-info/dvfs_table       u:object_r:sysfs_chip_info:s0
-genfscon sysfs /devices/system/goog-chip-info/hw_feature_table u:object_r:sysfs_chip_info:s0
-genfscon sysfs /devices/system/goog-chip-info/ids_table        u:object_r:sysfs_chip_info:s0

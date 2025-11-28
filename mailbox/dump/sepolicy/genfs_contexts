@@ -1,2 +1,0 @@
-genfscon tracefs /instances/goog_cpm_mailbox/trace u:object_r:debugfs_tracing_instances_mailbox:s0
-genfscon tracefs /instances/goog_nq_mailbox/trace  u:object_r:debugfs_tracing_instances_mailbox:s0

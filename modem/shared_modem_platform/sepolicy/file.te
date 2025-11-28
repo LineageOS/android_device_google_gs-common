@@ -1,2 +1,0 @@
-# Define the type which declare in genfs_contexts
-type sysfs_kernel_metrics, sysfs_type, fs_type;

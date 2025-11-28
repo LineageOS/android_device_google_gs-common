@@ -1,1 +1,0 @@
-genfscon tracefs /instances/irq_gia_google/trace u:object_r:tracefs_instances_interrupts:s0

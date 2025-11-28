@@ -1,4 +1,0 @@
-# NFC
-persist.vendor.nfc.                        u:object_r:vendor_nfc_prop:s0
-persist.vendor.nfc.antenna.                u:object_r:vendor_nfc_antenna_prop:s0
-
