@@ -493,16 +493,9 @@ ScopedAStatus BootControl::setActiveBootSlot(int32_t in_slot) {
             std::string("/sys/devices/platform/") + boot_dev + "/pixel/boot_lun_enabled";
     int fd = open(boot_lun_path.c_str(), O_RDWR | O_DSYNC);
     if (fd < 0) {
-        // Try old path for kernels < 5.4
-        // TODO: remove once kernel 4.19 support is deprecated
-        std::string boot_lun_path =
-                std::string("/sys/devices/platform/") + boot_dev + "/attributes/boot_lun_enabled";
-        fd = open(boot_lun_path.c_str(), O_RDWR | O_DSYNC);
-        if (fd < 0) {
-            return ScopedAStatus::fromServiceSpecificErrorWithMessage(
-                    COMMAND_FAILED, "failed to open ufs attr boot_lun_enabled");
+        return ScopedAStatus::fromServiceSpecificErrorWithMessage(
+                COMMAND_FAILED, "failed to open ufs attr boot_lun_enabled");
         }
-    }
 
     //
     // bBootLunEn
