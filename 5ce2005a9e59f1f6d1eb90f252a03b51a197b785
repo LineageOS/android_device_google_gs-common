@@ -16,6 +16,24 @@
       "message": "```suggestion\n    }\n```",
       "revId": "5ce2005a9e59f1f6d1eb90f252a03b51a197b785",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1fb7bc42_f78a96d5",
+        "filename": "bootctrl/aidl/BootControl.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 498,
+      "author": {
+        "id": 35199
+      },
+      "writtenOn": "2026-01-10T16:38:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c18bf519_2d678b7e",
+      "revId": "5ce2005a9e59f1f6d1eb90f252a03b51a197b785",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
