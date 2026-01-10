@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "807cf26b_90ba83a6",
+        "filename": "bootctrl/aidl/BootControl.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 498,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-01-10T14:46:24Z",
+      "side": 1,
+      "message": "Fix the indentation now that the if check is removed",
+      "range": {
+        "startLine": 496,
+        "startChar": 0,
+        "endLine": 498,
+        "endChar": 9
+      },
+      "revId": "375d0691799e762a900a476cf5379346be088092",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
