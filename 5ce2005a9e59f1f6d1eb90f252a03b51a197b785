@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c18bf519_2d678b7e",
+        "filename": "bootctrl/aidl/BootControl.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 498,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-01-10T16:15:46Z",
+      "side": 1,
+      "message": "```suggestion\n    }\n```",
+      "revId": "5ce2005a9e59f1f6d1eb90f252a03b51a197b785",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
